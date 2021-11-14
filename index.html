@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="kor">
+<html>
+<head>
+<title>한신대학교 공공인재학부 홈페이지</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/layout.css">
+<script src="https://kit.fontawesome.com/c529089a41.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="top">
+<div class="wrapper row1">
+  <header id="header">
+    <div id="logo" class="fl_left"> 
+      <div class="logos">
+      <div class=logoname><img src="https://yt3.ggpht.com/ytc/AAUvwnjpfHJ8DuO_V1363E48A-mAGf4sOtZfhqsoVGWm=s900-c-k-c0x00ffffff-no-rj"
+        style="float:left; margin-right: 10px;  width: 30px; height:30px;">한신대학교 공공인재학부 </div>
+      </div>
+
+
+      <style>
+        @font-face {
+          font-family: 'twayair';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+      
+      header {
+        font-family: 'twayair';
+      }
+
+      @font-face {
+        font-family: 'KoPubDotumMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body{
+      font-family:'KoPubDotumMedium';
+    }
+
+
+      </style>
+    </div>
+    <nav  class="top_three">
+      <a href="https://www.hs.ac.kr/sites/kor/index.do">대학홈페이지 |</a>
+      <a href="https://ent.hs.ac.kr/ipsi/main/main.asp">입시홈페이지 |</a>
+      <a href="https://sso2.hs.ac.kr/login.do?request_redirect_uri=https://portal.hs.ac.kr/">포털</a>
+    </nav>
+    <nav id="mainav" class="fl_right"> 
+      <ul class="clear">
+        <li class="drop"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">학부 안내</a>
+          <ul class="hey">
+            <li><a href="html/galley.html">학부 소개</a></li>
+            <li><a href="html/vision.html">학부 비전체계</a></li>
+            <li><a href="html/professor.html">교수진 소개</a></li>
+          </ul>
+        </li>
+        
+        <li><a class="drop" href="#">교육과정</a>
+          <ul class="hey">
+            <li><a href="https://www.hs.ac.kr/kor/10503/subview.do">교과목 소개</a></li>
+            <li><a href="html/gajung.html">교육과정 안내</a></li>
+            <li><a href="https://www.hs.ac.kr/kor/4837/subview.do">학사 일정</a></li>
+            <li><a href="html/gradu.html">졸업 요건</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">학회</a>
+          <ul class="hey">
+            <li><a href="https://cafe.naver.com/greenu1bew">공공조직관리학회</a></li>
+            <li><a href="https://cafe.naver.com/hspublicbigdata">빅데이터분석학회</a></li>
+            <li><a href="https://cafe.naver.com/aikoomnamoo">인공지능학회</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">커뮤니티</a>
+          <ul class="hey">
+            <li><a href="html/rhdwl.html">학부 공지사항</a></li>
+            <li><a href="html/gall.html">학부 갤러리</a></li>
+            <li><a href="html/gasi.html">자유게시판</a></li>
+          </ul>
+        </li>
+        <a href="" class="navbar__toogleBtn">
+          <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+  </header>
+</div>
+
+<style>
+
+  * {margin:0;padding:0;box-sizing:border-box;}
+  ul, li {list-style:none;}
+  
+  [name="slide"] {display:none;}
+  .slidebox {max-width:1000px;width:100%;margin:0 auto;text-align:center;}
+  .slidebox img {max-width:100%;}
+  .slidebox .slidelist {
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+  }
+  .slidebox .slideitem {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .35s;
+  }
+  .slidebox .slideitem label {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+  }
+  label.left {
+    left:20px;
+    background-color:#771cc2;
+    background-image:url('images/left-arrow.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+  }
+  label.right {
+    right:20px;
+    background-color:#771cc2;
+    background-image:url('images/right-arrow.png');
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+  }
+  
+  /* 페이징 스타일 */
+  .paginglist {text-align:center;padding:30px 0;}
+  .paginglist > li {display:inline-block;vertical-align:middle;margin:0 10px;}
+  .paginglist > li > label {display:block;padding:10px 30px;border-radius:10px;background:#ccc;cursor:pointer;}
+  .paginglist > li:hover > label {background:#333;}
+  
+  [id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+  [id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+  [id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+  [id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+  
+  @keyframes slide01 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:-300%;}
+    98% {left:-300%;}
+    100% {left:0%;}
+  }
+  @keyframes slide02 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+  }
+  @keyframes slide03 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+  }
+  @keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:300%;}
+    48% {left:300%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+  }
+</style>
+  
+  <div class="slidebox">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+    <input type="radio" name="slide" id="slide04">
+    <ul class="slidelist">
+      <li class="slideitem">
+        <div class="col2">
+          <label for="slide04" class="left"></label>
+          <label for="slide02" class="right"></label>
+          <a><img src="slide01.jpg"></a>
+        </div>
+      </li>
+      <li class="slideitem">
+        <div>
+          <label for="slide01" class="left"></label>
+          <label for="slide03" class="right"></label>
+          <a><img src="slide02.jpg"></a>
+        </div>
+      </li>
+      <li class="slideitem">
+        <div>
+          <label for="slide02" class="left"></label>
+          <label for="slide04" class="right"></label>
+          <a><img src="slide03.jpg"></a>
+        </div>
+      </li>
+      <li class="slideitem">
+        <div>
+          <label for="slide03" class="left"></label>
+          <label for="slide01" class="right"></label>
+          <a><img src="slide04.jpg"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+ <div class="board_wrap">
+        <div class="board_title">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="view.html">우리 조 모두 아자아자 화이팅!</a></div>
+                    <div class="writer">박소정</div>
+                    <div class="date">2021.11.15</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title"><a href="view.html">저희는 여러 조 중 B조 입니다:)</a></div>
+                    <div class="writer">도예림</div>
+                    <div class="date">2021.11.14</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="view.html">이석민 교수님의 웹프로그래밍 강의를 듣고 있습니다.</a></div>
+                    <div class="writer">김예원</div>
+                    <div class="date">2021.11.13</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="view.html">한신대학교 공공인재학부는 2021 신설학과 입니다.</a></div>
+                    <div class="writer">문수빈</div>
+                    <div class="date">2021.11.12</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="view.html">공공인재학부 공지사항</a></div>
+                    <div class="writer">최세영</div>
+                    <div class="date">2021.11.11</div>
+                    <div class="count">33</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+            <div class="bt_wrap">
+                <a href="write.html" class="on">등록</a>
+                <!--<a href="#">수정</a>-->
+            </div>
+        </div>
+    </div>
+
+
+  <div class="board_wrap">
+        <div class="board_title">
+            <strong>자유게시판</strong>
+            <p>자유롭게 입력하세요.</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd><input type="text" placeholder="글쓴이 입력" value="김이름"></dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" placeholder="비밀번호 입력" value="1234"></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea placeholder="내용 입력">
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.
+글 내용이 들어갑니다.</textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="view.html" class="on">수정</a>
+                <a href="view.html">취소</a>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+   
+   
+<fieldest>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_wWfvg5xH2g?autoplay=1&mute=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+ <style>
+     fieldset{ width:600px; padding: 10px; border:10pw solid rgb(56, 7, 56);}
+ </style>
+  </fieldset>
+ 
+
+
+
+<nav style="text-align: center; padding: 0px;">
+  <ul calss="abc">
+    <div>
+      <i class="far fa-file-alt docu">
+    <span style="margin-top:20px; font-size:18px; vertical-align:middle; font-family: 'KoPubDotumMedium'; font-weight:bold;"><a href="https://www.hs.ac.kr/kor/4837/subview.do">학사일정</a></span>
+    </i>
+
+
+
+      <i class="fas fa-book library">
+        <span style="margin-top:20px; font-size:18px; vertical-align:middle; font-family: 'KoPubDotumMedium';"><a href="http://ebook1.hs.ac.kr/FxLibrary/">도서관</a></span>
+      </i>
+
+
+      <i class="fas fa-map-marked-alt map">
+        <span style="margin-top:20px; font-size:18px; vertical-align:middle; font-family: 'KoPubDotumMedium';"><a href="https://www.hs.ac.kr/kor/4891/subview.do">위치안내</a></span>
+      </i>
+  </ul>
+</nav>
+  
+<div class="footbox">
+  <h1>공공인재학부 SNS</h1>
+      <ul>
+        <li><a title="인스타 새창열림" href="https://www.instagram.com/hs.forum/?utm_medium=copy_link" target="_blank"카페><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNjEyMjdfMTAy%2FMDAxNDgyNzc5NTkyMDM2.b7blyK8c1CdOakE8zwJV_Xj6AFUVvGnk3v9t_IP7Efwg.d52-VZzjzvbxK1iCRq7OSZEAKul5fybpqpxmc8T9JO4g.JPEG.brownfacebook%2Fse3_image_1804520136.jpg&type=sc960_832" width=80 height=80 align="right" style="vertical-align:middle;"></a></li>
+        <li><a title="카페 새창열림" href="https://cafe.naver.com/freesiaforum" target="_blank"카페><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MjRfMTQw%2FMDAxNjAwOTI4MDkyNzg3.fmzDWumtVH2f2kSBIoC8dF-apZjv9MiPWGYoUoXmxZ4g.2LkpIRjVZotc5FB0wYml1tdQdSdWowir_pz3-cXOKi8g.PNG.thdnjs4484%2F%25B3%25D7%25C0%25CC%25B9%25F6_%25C4%25AB%25C6%25E4_%25B7%25CE%25B0%25ED.png&type=sc960_832" width=80 height=80 align="right" style="vertical-align:middle;"></a></li>
+        <li><a title="유튜브 새창열림" href="https://www.youtube.com/channel/UClchjgC-vhOsXAy8bhwKX2w" target="_blank"유튜브><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAyMjFfMjkx%2FMDAxNTgyMjQ3MTUyODI1.JYdMVgxpOVF7rGm_EaoNd1Jnq5M57oKf0hcckkknjLAg.D8GpwjLrZncXcmxrAMNqK7lke-AFpN1-sis6nWB1508g.PNG.xkawjdthsus%2Fyoutube-1495277_640.png&type=sc960_832" width=80 height=80 align="right" style="vertical-align:middle;"></a></li>
+      </ul>
+</div>
+<div class="wrapper col4">
+  <div id="copyright">
+    <p class="fl_left">경기도 오산시 한신대길 137 한신대학교 공공인재학부 031-379-0840
+    조교실 전화 번호</p>
+</div>
+</body>
+</html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
