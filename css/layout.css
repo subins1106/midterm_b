@@ -532,7 +532,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 /* ----------------------------------------------Container------------------------------------- */
 
 #container{padding:20px 0;}
-#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #682525;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #0a0101;}
 
 /* ----------------------------------------------Homepage------------------------------------- */
 
