@@ -174,7 +174,7 @@ a {
   margin:0 auto;
   margin-top: 10px;
 }
-/**/
+/*동영상 끝*/
 .all{
   margin-top: 30px;
   display:flex;
@@ -182,16 +182,18 @@ a {
 
 }
 
-
 .down{
   display:flex;
   justify-content: center;
+  margin:20px;
+
 }
 
 .board_wrap1{
   width:580px;
   height: 500px;
 }
+
 .board_wrap2{
   width:500px;
 }
@@ -497,6 +499,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 
 /*공공인재 sns**/
+.footbox{
+  margin-left: 200px;
+}
+
 .footbox .titles {display: block;
   font-size: 16px;
   color: #000503;
@@ -507,7 +513,7 @@ text-align: left;}
 
 .threes {
   margin-right:10px;
-  margin-top:20px
+  margin-top:20px;
 }
 
 .threes li{
@@ -516,6 +522,8 @@ text-align: left;}
 }
 
 .col4{
+  font-family:"KoPubDotumMedium" ;
+  font-size: 17px;
   margin-top: 20px;
   padding:35px;
   bottom:0;
