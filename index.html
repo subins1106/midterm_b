@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="css/layout.css">
 <script src="https://kit.fontawesome.com/c529089a41.js" crossorigin="anonymous"></script>
+<script src="main.js" defer></script>
 </head>
 
 <body class="top">
@@ -50,53 +51,57 @@
       <a href="https://ent.hs.ac.kr/ipsi/main/main.asp">입시홈페이지 |</a>
       <a href="https://sso2.hs.ac.kr/login.do?request_redirect_uri=https://portal.hs.ac.kr/">포털</a>
     </nav>
-    <nav id="mainav" class="fl_right"> 
-      <ul class="clear">
-        <li class="drop"><a href="index.html">Home</a></li>
-        <li><a class="drop" href="#">학부 안내</a>
-          <ul class="hey">
+  <nav id="mainav" class="fl_right"> 
+    <ul class="nav-links">
+        <li class="main"><a href="index.html">Home</a></li>
+        <li><a class="main" href="#">학부 안내</a>
+          <ul>
             <li><a href="html/galley.html">학부 소개</a></li>
             <li><a href="html/vision.html">학부 비전체계</a></li>
             <li><a href="html/professor.html">교수진 소개</a></li>
           </ul>
         </li>
         
-        <li><a class="drop" href="#">교육과정</a>
-          <ul class="hey">
+        <li><a class="main" href="#">교육과정</a>
+          <ul>
             <li><a href="https://www.hs.ac.kr/kor/10503/subview.do">교과목 소개</a></li>
             <li><a href="html/gajung.html">교육과정 안내</a></li>
             <li><a href="https://www.hs.ac.kr/kor/4837/subview.do">학사 일정</a></li>
             <li><a href="html/gradu.html">졸업 요건</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">학회</a>
-          <ul class="hey">
+        <li><a class="main" href="#">학회</a>
+          <ul>
             <li><a href="https://cafe.naver.com/greenu1bew">공공조직관리학회</a></li>
             <li><a href="https://cafe.naver.com/hspublicbigdata">빅데이터분석학회</a></li>
             <li><a href="https://cafe.naver.com/aikoomnamoo">인공지능학회</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">커뮤니티</a>
-          <ul class="hey">
+        <li><a class="main" href="#">커뮤니티</a>
+          <ul>
             <li><a href="html/rhdwl.html">학부 공지사항</a></li>
             <li><a href="html/gall.html">학부 갤러리</a></li>
             <li><a href="html/gasi.html">자유게시판</a></li>
-          </ul>
+          </ul> 
         </li>
-        <a href="" class="navbar__toogleBtn">
-          <i class="fas fa-bars"></i>
-        </a>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
     </nav>
+  <script src="app.js"></script>
   </header>
 </div>
-
 <style>
 
   * {margin:0;padding:0;box-sizing:border-box;}
   ul, li {list-style:none;}
   
   [name="slide"] {display:none;}
-  .slidebox {max-width:1000px;width:100%;margin:0 auto;text-align:center;}
+  .slidebox {max-width:1000px;width:100%;margin:0 auto;text-align:center ;}
   .slidebox img {max-width:100%;}
   .slidebox .slidelist {
     white-space:nowrap;
@@ -229,7 +234,7 @@
       </li>
     </ul>
   </div>
-
+<div class="all">
  <div class="board_wrap1">
         <div class="board_title">
             <strong>공지사항</strong>
@@ -309,44 +314,35 @@
                 <div class="title">
                     <dl>
                         <dt>제목</dt>
-                        <dd><input type="text" placeholder="제목 입력" value="글 제목이 들어갑니다"></dd>
+                        <dd><input type="text" placeholder="제목 입력" value=""></dd>
                     </dl>
                 </div>
                 <div class="info">
                     <dl>
                         <dt>글쓴이</dt>
-                        <dd><input type="text" placeholder="글쓴이 입력" value="김이름"></dd>
+                        <dd><input type="text" placeholder="글쓴이 입력" value=""></dd>
                     </dl>
                     <dl>
                         <dt>비밀번호</dt>
-                        <dd><input type="password" placeholder="비밀번호 입력" value="1234"></dd>
+                        <dd><input type="password" placeholder="비밀번호 입력" value=""></dd>
                     </dl>
                 </div>
                 <div class="cont">
                     <textarea placeholder="내용 입력">
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.</textarea>
+내용을 입력해주세요.</textarea>
                 </div>
             </div>
             <div class="bt_wrap">
-                <a href="view.html" class="on">수정</a>
+                <a href="../html/lists.html" class="on">등록</a>
                 <a href="view.html">취소</a>
             </div>
         </div>
     </div>
+</div>
 
 
 
-   
-   
-   
-  <fieldest class="iframe">
+<fieldset class="iframe">
 
       <iframe width="560" height="315" text-align:center; src="https://www.youtube.com/embed/_wWfvg5xH2g?autoplay=1&mute=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -356,7 +352,6 @@
  </style>
   </fieldset>
  
-
 
 
 <nav style="text-align: center; padding: 0px;">
@@ -376,9 +371,7 @@
       <i class="fas fa-map-marked-alt map">
         <span style="margin-top:20px; font-size:18px; vertical-align:middle; font-family: 'KoPubDotumMedium';"><a href="https://www.hs.ac.kr/kor/4891/subview.do">위치안내</a></span>
       </i>
-  </ul>
-</nav>
-  
+  </ul>  
 <div class="footbox">
   <a class="titles">공공인재학부 SNS</a>
     <ul class="threes">
@@ -387,13 +380,15 @@
       <li><a title="유튜브 새창열림" href="https://www.youtube.com/channel/UClchjgC-vhOsXAy8bhwKX2w" target="_blank"유튜브><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDAyMjFfMjkx%2FMDAxNTgyMjQ3MTUyODI1.JYdMVgxpOVF7rGm_EaoNd1Jnq5M57oKf0hcckkknjLAg.D8GpwjLrZncXcmxrAMNqK7lke-AFpN1-sis6nWB1508g.PNG.xkawjdthsus%2Fyoutube-1495277_640.png&type=sc960_832" width=80 height=80 style="vertical-align:middle;"></a></li>
     </ul>
 </div>
-
+</nav>
+<footer>
 <div class="wrapper col4">
   <div id="foot">
     <p class="fl_left">경기도 오산시 한신대길 137 한신대학교 공공인재학부 
       <br>
       문의 : 공공인재학부 조교실 031-379-0840 (9:00~17:30)</p>
 </div>
+</footer>
 </body>
 </html>
   

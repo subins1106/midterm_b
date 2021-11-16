@@ -31,6 +31,7 @@ body{margin:0; padding:0;  font-size:12px; font-family:verdana, Arial, Helvetica
 color:#6f0579dc;}
 
 .fl_right{
+  display:flex;
   position:relative;
   left:450px;
   list-style:none;
@@ -42,6 +43,7 @@ color:#6f0579dc;}
   position:relative;
   margin:5px 30px;
   padding:0;
+  list-style:none;
 
 }
 
@@ -67,38 +69,90 @@ margin:0;
 
 /*반응형 웹 시작*/
 
-@media screen and (min-width: 768px) and (max-width:1439px) {
-.top_three{
-flex-direction: column;
-align-items:flex-start;
-padding:8px 24px;
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(5, 1, 1);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(14, 0, 0);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
 
 
-.fl_right{
-  margin-top:50px ; /*로고와 떨어지게 만들어줌.*/
-  flex-direction: column;
-  align-items:center;
-  width:100%;
-  background-color: #703bd1;
-}
-.fl_right li{
-width:100%;
-text-align:center;
-}
-}
-.nav__toogleBtn{
-  display:none;
-  position:absolute;
-  right:35px;
-  font-size:24px;
-  color:aquamarine
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
 }
 
-.navbar__toogleBtn{
-  display:block
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    background-color: #504954;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 /*반응형 끝 */
 
 /*footer**/
@@ -197,20 +251,25 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/*동영상*/
+.iframe{
+  margin:0 auto;
+}
+/**/
 
 .board_wrap1 {
-  position: relative;
-  right: 250px;
+
+  left:500px;
   width: 500px;
-  margin: 100px auto;
+  margin:0 auto 0;
+
 }
 
 .board_wrap2 {
-  position: relative;
-  right: 250px;
   width: 500px;
-  margin: 100px auto;
+  margin:0 auto 0;
+
+  
 }
 
 .board_title {
