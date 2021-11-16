@@ -8,7 +8,7 @@
 
 html{overflow-y:scroll;}
 body{margin:0; padding:0;  font-size:12px; font-family:verdana, Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
-#header{padding:0 0 50px 0;}
+#header{padding:0 0 50px 0; position:fixed;}
 
 
 .logos{
@@ -479,27 +479,24 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #breadcrumb ul li{display:inline;}
 #breadcrumb ul li.current a{text-decoration:underline; text}
 
-/* ----------------------------------------------Container------------------------------------- */
+/* 서브 메뉴 상단*/
 
 #container{
   padding:20px;
 }
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #0a0101;}
 
-/* ----------------------------------------------Content------------------------------------- */
+/* 서브 메뉴의 옆 내용물 */
 
 #content{display:block; float:left; width:600px;}
 
-/* ----------------------------------------------Column------------------------------------- */
+/* 서브 메뉴 위치 */
 
 #column{display:block; float:right; width:300px;}
 
 
-/* ----------------------------------------------footer------------------------------------- */
-#col4{padding:50px 0; background-color: #000;}
-#col4 p{margin:0; padding:0; margin:auto;}
-#fl_left{text-align: center;}
-/*footer**/
+
+/*공공인재 sns**/
 .footbox .titles {display: block;
   font-size: 16px;
   color: #000503;
@@ -516,4 +513,14 @@ text-align: left;}
 .threes li{
   margin-right:30px;
   float:left;
+}
+
+.col4{
+  margin-top: 20px;
+  padding:35px;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  background-color: #000;
+  color:#FFFFFF
 }
