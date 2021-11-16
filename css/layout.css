@@ -69,88 +69,6 @@ margin:0;
 
 /*반응형 웹 시작*/
 
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links a {
-  color: rgb(5, 1, 1);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(14, 0, 0);
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    height: 92vh;
-    background-color: #504954;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-  }
-
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
 
 
 /*반응형 끝 */
@@ -254,23 +172,33 @@ a {
 /*동영상*/
 .iframe{
   margin:0 auto;
+  margin-top: 10px;
 }
 /**/
-
-.board_wrap1 {
-
-  left:500px;
-  width: 500px;
-  margin:0 auto 0;
+.all{
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
 
 }
 
-.board_wrap2 {
-  width: 500px;
-  margin:0 auto 0;
 
-  
+.down{
+  display:flex;
+  justify-content: center;
 }
+
+.board_wrap1{
+  width:580px;
+  height: 500px;
+}
+.board_wrap2{
+  width:500px;
+}
+
+/**/
+
+
 
 .board_title {
   margin-bottom: 30px;
@@ -525,57 +453,24 @@ a {
 .board_write .cont textarea {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 150px;
   padding: 15px;
   box-sizing: border-box;
   border: 0;
   resize: vertical;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------------Wrapper------------------------------------- */
 
 div.wrapper{display:block; width:100%; margin:0; text-align:left;}
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:"KoPubDotumMedium";}
-.col0{color:#FFFFFF; background-color:#2D3134; border-top:5px solid #4A5155;}
-.col1, .col1 a{color:#C4C5C3; background-color:#2D3134;}
+
 .col2{color:#FFFFFF; background-color:#7e57c2; padding:15px 0}
-.col3{color:#000000; background-color:#FFFFFF; padding:15px 0}
-.col3 a{color:#02ACEE; background-color:#FFFFFF;}
-.col4{color:#CCCCCC; background-color:#2A2B2F;}
-.col4 a{color:#02ACEE; background-color:#2A2B2F;}
-.col5, .col5 a{color:#666666; background-color:#1B1B1B;}
+
 
 /* ----------------------------------------------Generalise------------------------------------- */
 
-#header, #topbar, #topnav, #breadcrumb, #homecontent, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+#header, #topnav, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
 
 
 /* ----------------------------------------------BreadCrumb------------------------------------- */
@@ -586,25 +481,39 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 /* ----------------------------------------------Container------------------------------------- */
 
-#container{padding:20px 0;}
+#container{
+  padding:20px;
+}
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #0a0101;}
-
-/* ----------------------------------------------Homepage------------------------------------- */
-
 
 /* ----------------------------------------------Content------------------------------------- */
 
 #content{display:block; float:left; width:600px;}
-
 
 /* ----------------------------------------------Column------------------------------------- */
 
 #column{display:block; float:right; width:300px;}
 
 
-
-
 /* ----------------------------------------------footer------------------------------------- */
+#col4{padding:50px 0; background-color: #000;}
+#col4 p{margin:0; padding:0; margin:auto;}
+#fl_left{text-align: center;}
+/*footer**/
+.footbox .titles {display: block;
+  font-size: 16px;
+  color: #000503;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-decoration: none;
+text-align: left;}
 
-#foot{padding:30px 0;}
-#foot p{margin:0; padding:0;}
+.threes {
+  margin-right:10px;
+  margin-top:20px
+}
+
+.threes li{
+  margin-right:30px;
+  float:left;
+}
