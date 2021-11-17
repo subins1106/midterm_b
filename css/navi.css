@@ -1,9 +1,5 @@
 
 
-
-
-
-/* ----------------------------------------------Column Navigation------------------------------------- */
 /*subnav는 각 홈페이지 마다 적용됨*/
 #column .subnav{display:block; width:250px; padding:25px; background-color:#F9F9F9; margin-bottom:30px;}
 #column .subnav h2{margin:0 0 30px 0; padding:0 0 20px 0; font-size:20px; font-weight:normal; font-family:'KoPubDotumMedium'; color:#666666; background-color:#F9F9F9; line-height:normal; border-bottom:1px dotted #666666;}
