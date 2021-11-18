@@ -3,11 +3,8 @@
 @import url("navi.css");
 
 
-
-html{overflow-y:scroll;}
-body{margin:0; padding:0;  font-size:12px; font-family:verdana, Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
-#header{padding:0 0 60px 0; position:fixed;}
-
+body{margin:0; padding:0;  font-size:12px; background-color:#FFFFFF;}
+#header{padding:0 0 90px 0;}
 
 .logos{
   position:relative;
@@ -30,7 +27,6 @@ body{margin:0; padding:0;  font-size:12px; font-family:verdana, Arial, Helvetica
   color:#6f0579dc;}
 
 .fl_right{
-  display:flex;
   position:relative;
   left:470px;
   list-style:none;
@@ -45,8 +41,7 @@ body{margin:0; padding:0;  font-size:12px; font-family:verdana, Arial, Helvetica
   list-style:none;
 
 }
-
-.fl_right li a{
+.fl_right li a {
 display:block;
 margin:0;
 }
@@ -57,8 +52,6 @@ margin:0;
 
 .fl_right li:hover ul { display:block; /* 마우스 커서 올리면 서브메뉴 보이게 하기 */ }
 
-
-#header #topnav{display:block; float:right; width:200px; margin:30px; padding:0;}
 #header ul{margin:0; padding:0; }
 #header li {display:inline; margin-right:35px;}
 
@@ -71,78 +64,23 @@ margin:0;
 
 
 @media screen and (max-width: 599px){
-  .top_three{
-  flex-direction: column;
-  align-items:flex-start;
-  padding:20px 24px;
-  }
+  
   .fl_right{
     position:relative;
     left:10px;
-    margin-top:50px ; /*로고와 떨어지게 만들어줌.*/
-    align-items:center;
+    margin-top:70px ; /*로고와 떨어지게 만들어줌.*/
+    flex-direction: column;
     width:50%;
     background-color: #FFFFFF;
   }
   .fl_right li{
   width:60%;
   text-align:center;
-  
-  }
-  
- 
-  .fl_toggleBtn {
-    display: block;
-  }
-
-  .fl_right.active {
-    display: block;
-  }
 }
-  
-.fl_right.active{
-  display:flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
-
-
-
-
-
-
-
 
 /*반응형 끝 */
 
-/*footer**/
-.footbox .titles {display: block;
-  font-size: 16px;
-  color: #000503;
-  font-weight: bold;
-  letter-spacing: -1px;
-  text-decoration: none;}
-
-.threes {
-  margin-right:10px;
-  margin-top:20px
-}
-
-.threes li{
-  margin-right:30px;
-  float:left;
-}
 
 
 /*사진 슬라이드 쇼*/
@@ -229,7 +167,7 @@ a {
 }
 /*동영상 끝*/
 
-/*공지사항 자유게시판*/
+/*공지사항 자유게시판 위치*/
 .all{
   margin-top: 30px;
   display:flex;
@@ -517,46 +455,11 @@ a {
   resize: vertical;
 }
 
-/* ----------------------------------------------Wrapper------------------------------------- */
-
-div.wrapper{display:block; width:100%; margin:0; text-align:left;}
-div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:"KoPubDotumMedium";}
-
-.col2{color:#FFFFFF; background-color:#7e57c2; padding:15px 0}
-
-
-/* ----------------------------------------------Generalise------------------------------------- */
-
-#header, #topnav, #breadcrumb, #container {display:block; position:relative; width:960px; margin:0 auto;}
-
-
-/*각 홈페이지 ▶메뉴 */
-
-#breadcrumb ul{margin:0; padding:0; list-style:none;}
-#breadcrumb ul li{display:inline;}
-#breadcrumb ul li.current a{text-decoration:underline; text}
-
-
-/* 서브 메뉴 상단*/
-
-#container{
-  padding:20px;
-}
-#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #0a0101;}
-
-/* 서브 메뉴의 옆 내용물 */
-
-#content{display:block; float:left; width:600px;}
-
-/* 서브 메뉴 위치 */
-
-#column{display:block; float:right; width:300px;}
-
 
 
 /*공공인재 sns**/
 .footbox{
-  margin-left: 200px;
+  margin-left: 330px;
 }
 
 .footbox .titles {display: block;
@@ -588,3 +491,22 @@ text-align: left;}
   background-color: #000;
   color:#FFFFFF
 }
+
+/*footer**/
+.footbox .titles {display: block;
+  font-size: 16px;
+  color: #000503;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-decoration: none;}
+
+.threes {
+  margin-right:10px;
+  margin-top:20px
+}
+
+.threes li{
+  margin-right:30px;
+  float:left;
+}
+/**/

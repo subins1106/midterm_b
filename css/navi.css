@@ -1,10 +1,42 @@
 
+/*각 홈페이지 마다 적용되는 subnav*/
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal; font-family:"KoPubDotumMedium";}
 
-/*subnav는 각 홈페이지 마다 적용됨*/
+.col2{color:#FFFFFF; background-color:#7e57c2; padding:15px 0}
+
+
+#header, #breadcrumb, #container {display:block; width:960px; margin:0 auto;}
+
+
+/*각 홈페이지 ▶메뉴 */
+
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+
+/* 서브 메뉴 상단*/
+
+#container{
+  padding:20px;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{font-size:20px; margin:0 0 15px 0; padding-bottom:8px; color:#666666; background-color:#FFFFFF; border-bottom:1px dotted #0a0101;}
+
+/* 서브 메뉴의 옆 내용물 */
+
+#content{display:block; float:left; width:600px;}
+
+/* 서브 메뉴 위치 */
+
+#column{display:block; float:right; width:300px;}
+
+
 #column .subnav{display:block; width:250px; padding:25px; background-color:#F9F9F9; margin-bottom:30px;}
 #column .subnav h2{margin:0 0 30px 0; padding:0 0 20px 0; font-size:20px; font-weight:normal; font-family:'KoPubDotumMedium'; color:#666666; background-color:#F9F9F9; line-height:normal; border-bottom:1px dotted #666666;}
 #column .subnav ul{margin:0; padding:0; list-style:none;}
 #column .subnav li{margin:0 0 3px 0; padding:0;}
 #column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
-#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#777777; background:url("images/blue_file.gif") no-repeat 10px center #F9F9F9; text-decoration:none; border-bottom:1px dotted #666666;}
+#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#777777; text-decoration:none; border-bottom:1px dotted #666666;}
 #column .subnav a:hover{color:#c60bf5; background-color:#F9F9F9;}
+
+
